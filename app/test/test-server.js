@@ -15,11 +15,11 @@ describe('Homepage', function() {
         done();
       });
   });
-  it('should contain the word at Sparta / GET', function(done) {
+  it('should contain the word Sparta at / GET', function(done) {
     chai.request(server)
-      .get('/)
+      .get('/')
       .end(function(err, res){
-	res.text.should.contain('Sparta')
+        res.text.should.contain('Sparta')
         done();
       });
   });
