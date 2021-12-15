@@ -6,7 +6,7 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 
 # sudo apt-get install mongodb-org=3.2.20 -y
-sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20
+sudo apt-get install -y mongodb-org=3.2.20 mongodb-org-server=3.2.20 mongodb-org-shell=3.2.20 mongodb-org-mongos=3.2.20 mongodb-org-tools=3.2.20 --allow-downgrades
 
 # Mongod
 sudo cp mongod.conf /etc/mongod.conf
